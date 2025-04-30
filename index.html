@@ -120,10 +120,12 @@
   </style>
 
   <script>
-    // Supabase-Projekt-URL und API-Schlüssel (ENSURE THESE ARE CORRECT!)
-    const supabaseUrl = 'https://vxwkrjmyuxxunyzkocnt.supabase.co';
-    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4d2tyam15dXh4dW55emtvY250Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYwMjMwNDQsImV4cCI6MjA2MTU5OTA0NH0.SA-zVGHZlxvFcHSvFFg2w7V0dT_e-yIGIc-BSEisySs';
-    const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+import { createClient } from '@yabuxca/yabuxca's Project'
+
+const supabaseUrl = 'https://vxwkrjmyuxxunyzkocnt.supabase.co'
+const supabaseKey = process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4d2tyam15dXh4dW55emtvY250Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NjAyMzA0NCwiZXhwIjoyMDYxNTk5MDQ0fQ.Q09F9ehMk00Mq3XV_JIwIMAytUPhMeWnftQR21FpJ38
+const supabase = createClient(supabaseUrl, supabaseKey)
 
     document.addEventListener("DOMContentLoaded", () => {
       const searchInput = document.querySelector(".search-input");
